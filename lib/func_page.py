@@ -16,6 +16,7 @@ def home():
 
     # Inizializzo session state
     list_season = list(set(list(data.season.values)))
+    list_season.reverse()
     if 'scelta_season' not in st.session_state:
         st.session_state['scelta_season'] = list_season[0]
     list_team = list(set(list(data.loc[data.season == st.session_state.scelta_season].my_team.values)))

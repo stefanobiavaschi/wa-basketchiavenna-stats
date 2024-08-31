@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/1b3c8183-483f-4d30-a660-74fa5eb018c1/resourceGroups/rg-basketchiavenna/providers/Microsoft.Web/sites/wa-basketchiavenna-stats",
+    "appService.deploySubpath": "."
+}
