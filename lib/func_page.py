@@ -16,12 +16,11 @@ def home():
 
     # Inizializzo session state
     list_season = list(set(list(data.season.values)))
-    list_season.reverse()
     if 'scelta_season' not in st.session_state:
-        st.session_state['scelta_season'] = list_season[0]
+        st.session_state['scelta_season'] = "23_24"
     list_team = list(set(list(data.loc[data.season == st.session_state.scelta_season].my_team.values)))
     if 'scelta_team' not in st.session_state:
-        st.session_state['scelta_team'] = list_team[0]
+        st.session_state['scelta_team'] = "chiav_dr3"
 
     data = data.loc[ (data.my_team == st.session_state.scelta_team) & (data.season == st.session_state.scelta_season ) ]
 
