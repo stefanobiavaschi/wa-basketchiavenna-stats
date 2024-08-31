@@ -1,0 +1,5 @@
+wastatsvenv
+streamlit-test-stats
+*.pyp
+*.pyc
+lib/__pycache__
